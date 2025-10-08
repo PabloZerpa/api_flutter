@@ -1,38 +1,41 @@
-
-# Priorizar Dart como lenguaje principal
+# FORZAR DART COMO LENGUAJE PRINCIPAL
 *.dart linguist-language=Dart
-*.dart linguist-detectable=true
 
-# EXCLUIR PLATAFORMAS
+# EXCLUIR TODAS LAS PLATAFORMAS NATIVAS
 android/ linguist-vendored
-ios/ linguist-vendored  
+ios/ linguist-vendored
 linux/ linguist-vendored
 windows/ linguist-vendored
 macos/ linguist-vendored
 
-# EXCLUIR CMAKE Y SISTEMAS DE BUILD
+# EXCLUIR CMAKE COMPLETAMENTE
 CMakeLists.txt linguist-vendored
 *.cmake linguist-vendored
 cmake/ linguist-vendored
-build/ linguist-vendored
 cmake-build-*/ linguist-vendored
-.out/ linguist-vendored
-*.out linguist-vendored
 
-# Despriorizar otros lenguajes
-*.c linguist-detectable=false
-*.cpp linguist-detectable=false
-*.h linguist-detectable=false
-*.m linguist-detectable=false
-*.swift linguist-detectable=false
-*.java linguist-detectable=false
-*.kt linguist-detectable=false
-*.cmake linguist-detectable=false
+# EXCLUIR SISTEMAS DE BUILD
+build/ linguist-vendored
+.dart_tool/ linguist-vendored
+.packages linguist-vendored
+pubspec.lock linguist-vendored
 
-# Archivos de configuración como datos
+# EXCLUIR ARCHIVOS C/C++/OBJETIVE-C
+*.c linguist-vendored
+*.cpp linguist-vendored
+*.cc linguist-vendored
+*.h linguist-vendored
+*.hpp linguist-vendored
+*.m linguist-vendored
+*.mm linguist-vendored
+*.swift linguist-vendored
+*.java linguist-vendored
+*.kt linguist-vendored
+*.gradle linguist-vendored
+
+# DEFINIR ARCHIVOS DE CONFIGURACIÓN
 pubspec.yaml linguist-language=YAML
-pubspec.lock linguist-language=YAML
 *.json linguist-language=JSON
 *.xml linguist-language=XML
 *.md linguist-language=Markdown
-*.lock linguist-language=JSON
+*.txt linguist-language=Text
