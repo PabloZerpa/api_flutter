@@ -3,6 +3,22 @@
 *.dart linguist-language=Dart
 *.dart linguist-detectable=true
 
+# EXCLUIR PLATAFORMAS
+android/ linguist-vendored
+ios/ linguist-vendored  
+linux/ linguist-vendored
+windows/ linguist-vendored
+macos/ linguist-vendored
+
+# EXCLUIR CMAKE Y SISTEMAS DE BUILD
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
+cmake/ linguist-vendored
+build/ linguist-vendored
+cmake-build-*/ linguist-vendored
+.out/ linguist-vendored
+*.out linguist-vendored
+
 # Despriorizar otros lenguajes
 *.c linguist-detectable=false
 *.cpp linguist-detectable=false
@@ -12,9 +28,6 @@
 *.java linguist-detectable=false
 *.kt linguist-detectable=false
 *.cmake linguist-detectable=false
-CMakeLists.txt linguist-vendored
-*.cmake linguist-vendored
-cmake/ linguist-vendored
 
 # Archivos de configuración como datos
 pubspec.yaml linguist-language=YAML
@@ -22,19 +35,4 @@ pubspec.lock linguist-language=YAML
 *.json linguist-language=JSON
 *.xml linguist-language=XML
 *.md linguist-language=Markdown
-
-pubspec.yaml linguist-language=YAML
-pubspec.lock linguist-language=YAML
-*.json linguist-language=JSON
-*.xml linguist-language=XML
-*.md linguist-language=Markdown
 *.lock linguist-language=JSON
-
-android/ linguist-vendored
-ios/ linguist-vendored  
-linux/ linguist-vendored
-windows/ linguist-vendored
-macos/ linguist-vendored
-build/ linguist-vendored
-cmake-build-*/ linguist-vendored
-.dart_tool/ linguist-vendored
