@@ -2,7 +2,6 @@
 *.dart linguist-language=Dart
 *.dart linguist-detectable=true
 
-
 android/ linguist-vendored
 ios/ linguist-vendored  
 linux/ linguist-vendored
@@ -12,14 +11,12 @@ build/ linguist-vendored
 cmake-build-*/ linguist-vendored
 .dart_tool/ linguist-vendored
 
-
 pubspec.yaml linguist-language=YAML
 pubspec.lock linguist-language=YAML
 *.json linguist-language=JSON
 *.xml linguist-language=XML
 *.md linguist-language=Markdown
 *.lock linguist-language=JSON
-
 
 *.c linguist-vendored
 *.cpp linguist-vendored
