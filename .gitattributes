@@ -1,15 +1,24 @@
 
+# Priorizar Dart como lenguaje principal
 *.dart linguist-language=Dart
 *.dart linguist-detectable=true
 
-android/ linguist-vendored
-ios/ linguist-vendored  
-linux/ linguist-vendored
-windows/ linguist-vendored
-macos/ linguist-vendored
-build/ linguist-vendored
-cmake-build-*/ linguist-vendored
-.dart_tool/ linguist-vendored
+# Despriorizar otros lenguajes
+*.c linguist-detectable=false
+*.cpp linguist-detectable=false
+*.h linguist-detectable=false
+*.m linguist-detectable=false
+*.swift linguist-detectable=false
+*.java linguist-detectable=false
+*.kt linguist-detectable=false
+*.cmake linguist-detectable=false
+
+# Archivos de configuración como datos
+pubspec.yaml linguist-language=YAML
+pubspec.lock linguist-language=YAML
+*.json linguist-language=JSON
+*.xml linguist-language=XML
+*.md linguist-language=Markdown
 
 pubspec.yaml linguist-language=YAML
 pubspec.lock linguist-language=YAML
@@ -17,14 +26,3 @@ pubspec.lock linguist-language=YAML
 *.xml linguist-language=XML
 *.md linguist-language=Markdown
 *.lock linguist-language=JSON
-
-*.c linguist-vendored
-*.cpp linguist-vendored
-CMakeLists.txt linguist-vendored
-*.cmake linguist-vendored
-cmake/ linguist-vendored
-*.h linguist-vendored
-*.m linguist-vendored
-*.swift linguist-vendored
-
-
