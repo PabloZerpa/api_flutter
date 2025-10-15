@@ -1,5 +1,5 @@
 import 'package:api_flutter/data/models/superhero_model.dart' hide Image;
-import 'package:api_flutter/data/superhero_services.dart';
+import 'package:api_flutter/data/services/superhero_services.dart';
 import 'package:flutter/material.dart';
 
 class SearchScreen extends StatefulWidget {
